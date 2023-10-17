@@ -1,16 +1,16 @@
-export class Persona{
+export class Animal{
     nombre = "";
-    edad = 0;
+    raza = "";
     #element = null;
 
 
-constructor(nombre, edad) { 
+constructor(nombre, raza) { 
     this.nombre = nombre;
-    this.edad = edad;
+    this.raza = raza;
 }
 
 #obtenerTexto (){
-    const texto = "Hola, mi nombre es " + this.nombre + " y tengo " + this.edad + " años";
+    const texto = "Mi nombre es " + this.nombre + " y soy de raza " + this.raza;
     return texto;
 }
 
@@ -27,12 +27,12 @@ onClickListener(){
     this.#element.addEventListener("click", () => {
         const texto = this.#obtenerTexto();
         alert(texto);
-    })
+    });
 }
 }
 
 export const obtenerData = async () => {
-const response = await fetch ("https://raw.githubusercontent.com/Lalauraph/Semana11-Consumo-JSON-con-fetch/main/data.json")
+const response = await fetch ("https://raw.githubusercontent.com/Lalauraph/Taller-Eventos-en-Clases-OOP/main/data.json")
 const data = await response.json();
 return data;
 }
