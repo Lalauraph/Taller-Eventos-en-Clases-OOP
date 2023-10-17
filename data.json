@@ -1,0 +1,16 @@
+{
+"animales":[
+        {
+            "nombre":"firulais",
+            "raza": "pastor aleman"
+        },
+        {
+            "nombre":"pirata",
+            "raza": "pitbull" 
+        },
+        {
+            "nombre":"luna",
+            "pais": "labrador"
+        }
+    ]
+}
